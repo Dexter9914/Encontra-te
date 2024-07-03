@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portimão Map App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="filters">
+      <h3>Filtros</h3> 
+      <input type="text" id="search-box" placeholder="Pesquisar" oninput="applyFilters()" />
+      <div id="checkboxes"></div>
+      <div className="item1"></div>
+      <label>
+        <input type="checkbox" value="Bar" onchange="applyFilters()" /> Bar
+      </label>
+      <div className="item2"></div>
+      <label>
+        <input type="checkbox" value="Musica ao Vivo" onchange="applyFilters()" /> Musica ao Vivo
+      </label>
+      <div className="item3"></div>
+      <label>
+        <input type="checkbox" value="Restaurante" onchange="applyFilters()" /> Restaurante
+      </label>
+      <div className="item4"></div>
+      <label>
+        <input type="checkbox" value="Sport TV" onchange="applyFilters()" /> Sport TV
+      </label>
+      <div className="item5"></div>
+      <label>
+        <input type="checkbox" value="Pequeno Almoço" onchange="applyFilters()" /> Pequeno Almoço
+      </label>
+      <div className="item6"></div>
+      <label>
+        <input type="checkbox" value="Caracois" onchange="applyFilters()" /> Caracois
+      </label>
+      <div className="item7"></div>
+      <label>
+        <input type="checkbox" value="Vegetariano" onchange="applyFilters()" /> Vegetariano
+      </label>
+      <div className="item8"></div>
+      <label>
+        <input type="checkbox" value="Esplanada" onchange="applyFilters()" /> Esplanada
+      </label>
+     
+      <div className="item9"></div>
+      <label>
+        <input type="checkbox" value="Jogos de Tabuleiro" onchange="applyFilters()" /> Jogos de Tabuleiro
+      </label>
+      
+      <div className="item10"></div>
+      <label>
+        <input type="checkbox" value="Xadrez" onchange="applyFilters()" /> Xadrez
+      </label>
+      
+      <div className="item11"></div>
+      <label>
+        <input type="checkbox" value="Peixe Assado" onchange="applyFilters()" /> Peixe Assado
+      </label>
+      
+      <div className="item12"></div>
+      <label>
+        <input type="checkbox" value="Acessivel a Cadeira de Rodas" onchange="applyFilters()" /> Acessivel a Cadeira de Rodas
+      </label>
+      
+       <div className="item12"></div>
+      <label>
+        <input type="checkbox" value="Take-Away" onchange="applyFilters()" /> Take-Away
+      </label>
+      
+      
+    
+    </div>
+    <div id="map"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmNpIAygFqoblb25TGlFGIdRSabucyfT4&callback=initMap"></script>
+ 
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmNpIAygFqoblb25TGlFGIdRSabucyfT4&libraries=places&callback=initMap"></script>
+  
+</body>
+</html>
